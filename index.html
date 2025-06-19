@@ -145,7 +145,7 @@
     function nextQuestion() {
       clearInterval(timer);
       currentQuestion++;
-      if (currentQuestion <= quizData.length) {
+      if (currentQuestion < quizData.length) {
         loadQuestion();
       } else {
         showResult();
